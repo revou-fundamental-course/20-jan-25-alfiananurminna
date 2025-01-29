@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    
-</body>
+    <header style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: medium;" >
+        <h1>KALKULATOR BMI</h1>
+    </header>
+
+    <main>
+        <article>
+            <p class="p1">Dengan Kalkulator BMI ini Anda dapat menghitung dan mengevaluasi Indeks Massa Tubuh Anda (BMI).
+                Hitung Body Mass Index (BMI) online untuk cek tinggi dan berat badan ideal Anda sekarang.
+                Kalkulator ini akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. 
+                Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+            </p>
+        </article>
+
+        <h2 style="font-family: Arial, Helvetica, sans-serif;  text-align: center; ">Perhitungan BMI</h2>
+        <form>
+            <div class="form-group">
+                <label for="inputage">Berapa Usia Kamu (tahun)</label>
+                <input type="number" id="inputage" name="umur">
+            </div>
+
+            <div class="form-group">
+                <label for="inputbb">Berapa Berat Badan Kamu (kg)</label>
+                <input type="number" id="inputbb" name="berat">
+            </div>
+
+            <div class="form-group">
+                <label for="inputtb">Berapa Tinggi Badan Kamu (cm)</label>
+                <input type="number" id="inputtb" name="tinggi">
+            </div>
+
+            <div class="button">
+                <button type="button" class="btnhitung" onclick="hitung()">Hitung BMI</button>
+                <button type="button" class="btnreset" onclick="reset()">Reset</button>
+            </div>
+        </form>
+
+        <h2 style="font-family: Arial, Helvetica, sans-serif;  text-align: center;">Hasil Kalkulator BMI</h2>
+        <div id="resultbmi" style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xxx-large; text-align: center;"></div>
+
+        <article>
+            <header style="font-family: Arial, Helvetica, sans-serif;">
+                <h3>Manfaat Menggunakan Kalkulator BMI</h3>
+            </header>
+
+            <p class="p2">
+                1. Mengetahui Indeks Massa Tubuh (IMT) = Body Mass Index atau Indeks Massa Tubuh dihitung berdasarkan berat dan tinggi badan. Dari nilai BMI, kamu bisa tahu apakah kondisi badanmu sudah termasuk ideal atau belum.
+            </p>
+            <p class="p3">
+                2. Menjaga Kesehatan Badan = Saat kamu tahu nilai BMI-mu, kamu bisa lebih menjaga kesehatan badanmu. Itu karena berat badan adalah salah satu indikator dari kondisi kesehatanmu. Supaya engga melewati batas normal.
+            </p>
+            <p class="p4">
+                3. Lebih Waspada Sama Berat Badan = Dari nilai BMI yang dipantau secara teratur, kamu bisa lebih waspada untuk menjaga berat badan supaya ngga terlalu tinggi atau terlalu rendah.
+            </p>
+        </article>
+    </main>
+
+    <footer>by @alfiananurminna</footer>
 </html>
