@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css\styles.css">
 </head>
 <body>
-    <header style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: medium;" >
+    <header>
         <h1>KALKULATOR BMI</h1>
     </header>
 
     <main>
+        <!-- intro -->
         <article>
             <p class="p1">Dengan Kalkulator BMI ini Anda dapat menghitung dan mengevaluasi Indeks Massa Tubuh Anda (BMI).
                 Hitung Body Mass Index (BMI) online untuk cek tinggi dan berat badan ideal Anda sekarang.
@@ -21,21 +22,30 @@
             </p>
         </article>
 
-        <h2 style="font-family: Arial, Helvetica, sans-serif;  text-align: center; ">Perhitungan BMI</h2>
-        <form>
+        <!-- input -->
+        <form class="input">
+            <hr>
+            <h2 style="text-align: center;">Perhitungan BMI</h2>
+            <hr>
+            <h4 style="text-align: center;">Jenis Kelamin</h4>
+            <div class="jenis">
+            <input type="radio" name="jk" value="laki-laki">Laki-laki
+            <input type="radio" name="jk" value="perempuan">Perempuan
+            </div>
+
             <div class="form-group">
                 <label for="inputage">Berapa Usia Kamu (tahun)</label>
-                <input type="number" id="inputage" name="umur">
+                <input type="number" id="inputage" name="umur" required>
             </div>
 
             <div class="form-group">
                 <label for="inputbb">Berapa Berat Badan Kamu (kg)</label>
-                <input type="number" id="inputbb" name="berat">
+                <input type="number" id="inputbb" name="berat" required>
             </div>
 
             <div class="form-group">
                 <label for="inputtb">Berapa Tinggi Badan Kamu (cm)</label>
-                <input type="number" id="inputtb" name="tinggi">
+                <input type="number" id="inputtb" name="tinggi" required>
             </div>
 
             <div class="button">
@@ -44,24 +54,23 @@
             </div>
         </form>
 
-        <h2 style="font-family: Arial, Helvetica, sans-serif;  text-align: center;">Hasil Kalkulator BMI</h2>
-        <div id="resultbmi" style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xxx-large; text-align: center;"></div>
+        <!-- output -->
+        <div>
+            <h2 style="text-align: center;">Hasil Kalkulator BMI</h2>
+            <div id="resultbmi"></div>
+        </div>
 
-        <article>
-            <header style="font-family: Arial, Helvetica, sans-serif;">
+        <!-- manfaat -->
+        <div class="manfaat">
+            <header>
                 <h3>Manfaat Menggunakan Kalkulator BMI</h3>
             </header>
-
-            <p class="p2">
-                1. Mengetahui Indeks Massa Tubuh (IMT) = Body Mass Index atau Indeks Massa Tubuh dihitung berdasarkan berat dan tinggi badan. Dari nilai BMI, kamu bisa tahu apakah kondisi badanmu sudah termasuk ideal atau belum.
-            </p>
-            <p class="p3">
-                2. Menjaga Kesehatan Badan = Saat kamu tahu nilai BMI-mu, kamu bisa lebih menjaga kesehatan badanmu. Itu karena berat badan adalah salah satu indikator dari kondisi kesehatanmu. Supaya engga melewati batas normal.
-            </p>
-            <p class="p4">
-                3. Lebih Waspada Sama Berat Badan = Dari nilai BMI yang dipantau secara teratur, kamu bisa lebih waspada untuk menjaga berat badan supaya ngga terlalu tinggi atau terlalu rendah.
-            </p>
-        </article>
+            <ol>
+                <li>Mengetahui Indeks Massa Tubuh (IMT) = Body Mass Index atau Indeks Massa Tubuh dihitung berdasarkan berat dan tinggi badan. Dari nilai BMI, kamu bisa tahu apakah kondisi badanmu sudah termasuk ideal atau belum.</li>
+                <li>Menjaga Kesehatan Badan = Saat kamu tahu nilai BMI-mu, kamu bisa lebih menjaga kesehatan badanmu. Itu karena berat badan adalah salah satu indikator dari kondisi kesehatanmu. Supaya engga melewati batas normal.</li>
+                <li>Lebih Waspada Sama Berat Badan = Dari nilai BMI yang dipantau secara teratur, kamu bisa lebih waspada untuk menjaga berat badan supaya ngga terlalu tinggi atau terlalu rendah.</li>
+            </ol>
+        </div>
     </main>
 
     <footer>by @alfiananurminna</footer>
