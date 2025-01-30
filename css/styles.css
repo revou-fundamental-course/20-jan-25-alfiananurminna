@@ -55,15 +55,15 @@ main{
 }
 
 .btnhitung{
+    color: white;
     background-color: red;
-    padding: 10px;
-    min-width: 50px;
+    padding: 5px;
 }
 
 .btnreset{
-    background-color: greenyellow;
-    padding: 10px;
-    min-width: 50px;
+    color: white;
+    background-color: green;
+    padding: 5px;
 }
 
 #resultbmi{
@@ -75,7 +75,6 @@ main{
 
 .manfaat{
     text-align: justify;
-    padding-inline: 100px;
 }
 
 footer{
